@@ -1,0 +1,12 @@
+{% extends "homepage.html" %} {% block form %}
+
+<form method="POST">
+  {{form.csrf_token }}
+  <div>{{form.username.label()}} {{form.username()}}</div>
+  <div>{{form.email.label()}} {{form.email()}}</div>
+  <div>{{form.senha.label()}} {{form.senha()}}</div>
+  <div>{{form.confirmacao_senha.label()}} {{form.confirmacao_senha()}}</div>
+  <div>{{form.botao_confirmacao()}}</div>
+</form>
+
+{% endblock %}
