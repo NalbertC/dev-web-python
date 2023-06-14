@@ -1,12 +1,31 @@
-`pip install flask`
+# __Dev-Web - Python__
 
-`pip install flask-sqlalchemy`
+Estudo de desenvolvimento web utilizando __Python__, com o framework __Flask__
 
-`pip install Flask-Login`
+***
+
+## Preprarando o ambiente virtual para o Python.
+Sistema operacional utilizado: `Ubuntu/Linux`
+
+* `python3 -m venv env`
+
+* `source env/bin/activate`
+
+## Bibliotecas utilizadas no projeto:
+
+* `pip install flask`
+
+* `pip install flask-sqlalchemy`
+
+* `pip install Flask-Login`
 
 
-`pip install Flask-Bcrypt`
+* `pip install Flask-Bcrypt`
 
-`pip install Flask-WTF`
+* `pip install Flask-WTF`
 
-`pip install email-validator`
+* `pip install email-validator`
+
+## Para rodar o servidor:
+
+* `python3 main.py`

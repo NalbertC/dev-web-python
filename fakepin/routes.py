@@ -9,7 +9,7 @@ from werkzeug. utils import secure_filename
 import uuid
 
 
-@app.route("/",methods=["GET","POST"])
+@app.route("/login",methods=["GET","POST"])
 def homepage():
   formLogin = FormLogin()
   if formLogin.validate_on_submit():
@@ -76,7 +76,7 @@ def logout():
   return redirect(url_for("homepage"))
 
 
-@app.route("/feed")
+@app.route("/")
 @login_required
 def feed():
   fotos = Foto.query.order_by(Foto.data_criacao.desc()).all()
